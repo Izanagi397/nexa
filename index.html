@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NEXA — Bagas Adrian Saputra. Personal Portfolio. Turning Ideas Into Digital Experiences." />
+  <title>NEXA — Bagas Adrian Saputra | Personal Portfolio</title>
+
+  <!-- Google Fonts: Inter & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons CDN -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       1. NAVBAR
+       ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <!-- Logo / Brand -->
+      <a href="#home" class="navbar__logo" aria-label="NEXA Home">
+        <span class="logo-mark" id="brand-logo">NEXA</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="navbar__actions">
+        <a href="#contact" class="btn btn--outline navbar__cta">Contact Me</a>
+      </div>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Buka navigasi menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#contact" class="mobile-nav-link mobile-nav-link--cta">Contact Me</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       2. HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+
+      <!-- Text Info -->
+      <div class="hero__content fade-in">
+        <span class="label">Personal Portfolio</span>
+
+        <h1 class="hero__headline">
+          <span id="hero-headline1">Turning Ideas Into</span><br />
+          <em id="hero-headline2">Digital Experiences.</em>
+        </h1>
+
+        <p class="hero__desc" id="hero-desc">
+          Mahasiswa yang berdedikasi di bidang desain grafis dan teknologi digital. Berpengalaman menggunakan <strong>Adobe Creative Suite</strong> dan <strong>Microsoft Office</strong>, serta aktif mendalami <strong>Web Development</strong> dan <strong>UI/UX Design</strong> untuk menciptakan solusi visual yang komunikatif dan profesional.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">
+            <span>Explore My Projects</span>
+            <i class="ph ph-arrow-down"></i>
+          </a>
+          <a href="#contact" class="btn btn--ghost">
+            <span>Contact Me</span>
+            <i class="ph ph-paper-plane-tilt"></i>
+          </a>
+        </div>
+
+        <!-- Meta status / tags -->
+        <div class="hero__meta">
+          <div class="hero__meta-item">
+            <i class="ph ph-graduation-cap"></i>
+            <span id="hero-status">Mahasiswa Aktif</span>
+          </div>
+          <div class="hero__meta-item">
+            <i class="ph ph-map-pin"></i>
+            <span id="hero-location">Purwokerto, Indonesia</span>
+          </div>
+          <div class="hero__meta-item">
+            <i class="ph ph-circle-fill" style="color: #4E9F3D; font-size: 0.65rem;"></i>
+            <span>Open for Projects &amp; Collaboration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual (Photo & Badges) -->
+      <div class="hero__visual fade-in fade-in--delay">
+        <div class="profile-frame">
+          <img
+            id="hero-profile-img"
+            src="assets/images/profile.jpg"
+            alt="Bagas Adrian Saputra Profile"
+            class="profile-frame__img"
+            onerror="this.style.display='none'; document.getElementById('hero-profile-fallback').style.display='flex';"
+          />
+          <div class="profile-frame__fallback" id="hero-profile-fallback">
+            <i class="ph ph-user"></i>
+            <span>Bagas Adrian Saputra</span>
+          </div>
+        </div>
+
+        <!-- Floating Badges -->
+        <div class="floating-badge floating-badge--top">
+          <i class="ph ph-palette"></i>
+          <span>Graphic Designer</span>
+        </div>
+        <div class="floating-badge floating-badge--bottom">
+          <i class="ph ph-code"></i>
+          <span>Junior Web Enthusiast</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll ke About">
+      <span>Scroll</span>
+      <i class="ph ph-caret-down"></i>
+    </a>
+  </section>
+
+
+  <!-- ============================================================
+       3. ABOUT SECTION
+       ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">Get to Know Me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about__inner">
+        <!-- Photo Side -->
+        <div class="about__photo reveal">
+          <div class="about__photo-wrap">
+            <img
+              id="about-profile-img"
+              src="assets/images/profile.jpg"
+              alt="Bagas Adrian Saputra"
+              onerror="this.style.display='none'; document.getElementById('about-photo-fallback').style.display='flex';"
+            />
+            <div class="about__photo-fallback" id="about-photo-fallback">
+              <i class="ph ph-user"></i>
+            </div>
+          </div>
+          <div class="about__photo-info">
+            <strong id="about-name">Bagas Adrian Saputra</strong>
+            <span id="about-title">Mahasiswa &bull; Graphic Designer &bull; Web Learner</span>
+          </div>
+        </div>
+
+        <!-- Bio Content Side -->
+        <div class="about__content reveal reveal--delay">
+          <div class="about__block">
+            <h3 id="about-greeting">Halo, saya Bagas Adrian Saputra 👋</h3>
+            <p id="about-p1">
+              Saya adalah mahasiswa yang berbasis di wilayah Purwokerto dengan minat mendalam pada perancangan identitas visual, media promosi, dan dunia digital. Saya telah terbiasa bekerja menggunakan <strong>Adobe Photoshop</strong>, <strong>Illustrator</strong>, <strong>Premiere Pro</strong>, serta aplikasi produktivitas <strong>Microsoft Office</strong> untuk menyelesaikan berbagai kebutuhan organisasi maupun proyek freelance.
+            </p>
+            <p id="about-p2">
+              Seiring dengan pesatnya perkembangan teknologi digital, saya juga sedang antusias memperluas wawasan ke bidang <strong>UI/UX Design menggunakan Figma</strong> serta dasar-dasar <strong>Web Development (HTML, CSS, JavaScript)</strong>. Saya percaya bahwa perpaduan antara kepekaan visual dan logika pemrograman dapat menghasilkan produk digital yang memikat sekaligus fungsional.
+            </p>
+          </div>
+
+          <!-- Education & Background -->
+          <div class="about__block">
+            <h4 class="about__sub-title">
+              <i class="ph ph-books"></i> Pendidikan &amp; Latar Belakang
+            </h4>
+            <ul class="about__list" id="about-edu-list">
+              <li>
+                <strong>Pendidikan Tinggi (Universitas)</strong> — Mahasiswa Aktif
+                <span class="about__list-meta">Purwokerto &bull; 2022 – Sekarang</span>
+              </li>
+              <li>
+                <strong>SMA / Sekolah Menengah Atas</strong> — Lulusan
+                <span class="about__list-meta">Jawa Tengah</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Interest Tags -->
+          <div class="about__block">
+            <h4 class="about__sub-title">
+              <i class="ph ph-sparkle"></i> Minat &amp; Bidang Fokus
+            </h4>
+            <div class="about__tags" id="about-tags-container">
+              <span class="tag">Graphic Design</span>
+              <span class="tag">Branding &amp; Visual Identity</span>
+              <span class="tag">UI/UX Exploration</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Social Media Creative</span>
+              <span class="tag">Digital Marketing</span>
+            </div>
+          </div>
+
+          <!-- Approach -->
+          <div class="about__block">
+            <h4 class="about__sub-title">
+              <i class="ph ph-target"></i> Prinsip &amp; Pendekatan Kerja
+            </h4>
+            <p id="about-approach">
+              Kerapihan, kejelasan komunikasi pesan, dan kepuasan pengguna adalah prioritas utama saya. Saya selalu terbuka mempelajari hal baru, beradaptasi dengan cepat terhadap perkembangan tools terbaru, dan konsisten menghadirkan karya yang rapi dan terstruktur.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       4. PROJECTS SECTION
+       ============================================================ -->
+  <section class="projects section section--alt" id="projects">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">
+          Kumpulan hasil karya desain, eksplorasi antarmuka, dan proyek digital yang telah saya kerjakan.
+        </p>
+      </div>
+
+      <!-- Filter Categories -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn filter-btn--active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="business">Business &amp; Marketing</button>
+        <button class="filter-btn" data-filter="academic">Academic</button>
+      </div>
+
+      <!-- Projects Grid (6 Initial Cards) -->
+      <div class="projects__grid" id="projects-grid">
+
+        <!-- Project 1: Graphic / Branding -->
+        <article class="project-card reveal" data-category="graphic" data-project-id="1">
+          <div class="project-card__thumb">
+            <img src="assets/images/project-1.jpg" alt="Brand Identity & Marketing UMKM" class="project-img" data-proj-img="1" onerror="this.parentElement.classList.add('no-img');" />
+            <div class="project-card__thumb-fallback">
+              <i class="ph ph-palette"></i>
+            </div>
+            <span class="project-card__category" data-proj-cat="1">Graphic Design</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-proj-title="1">Brand Identity &amp; Promosi UMKM</h3>
+            <p class="project-card__desc" data-proj-desc="1">
+              Perancangan identitas visual komprehensif untuk bisnis lokal, mulai dari logo resmi, color palette, packaging mockup, hingga materi promosi media sosial.
+            </p>
+            <div class="project-card__tech" data-proj-tech="1">
+              <span class="tech-tag">Adobe Illustrator</span>
+              <span class="tech-tag">Photoshop</span>
+              <span class="tech-tag">Canva</span>
+            </div>
+            <div class="project-card__actions">
+              <button type="button" class="btn btn--sm btn--primary view-detail-btn" data-detail-id="1">View Details</button>
+              <a href="#contact" class="btn btn--sm btn--ghost">Consultation</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Graphic / Organization Feeds -->
+        <article class="project-card reveal" data-category="graphic" data-project-id="2">
+          <div class="project-card__thumb">
+            <img src="assets/images/project-2.jpg" alt="Social Media Campaign & Event Poster" class="project-img" data-proj-img="2" onerror="this.parentElement.classList.add('no-img');" />
+            <div class="project-card__thumb-fallback">
+              <i class="ph ph-megaphone"></i>
+            </div>
+            <span class="project-card__category" data-proj-cat="2">Graphic Design</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-proj-title="2">Social Media Feed &amp; Event Publication</h3>
+            <p class="project-card__desc" data-proj-desc="2">
+              Rangkaian desain feeds Instagram, banner digital, dan poster publikasi kegiatan kampus &amp; kepanitiaan dengan layout visual yang eye-catching dan harmonis.
+            </p>
+            <div class="project-card__tech" data-proj-tech="2">
+              <span class="tech-tag">Adobe Photoshop</span>
+              <span class="tech-tag">Illustrator</span>
+              <span class="tech-tag">Layouting</span>
+            </div>
+            <div class="project-card__actions">
+              <button type="button" class="btn btn--sm btn--primary view-detail-btn" data-detail-id="2">View Details</button>
+              <a href="#contact" class="btn btn--sm btn--ghost">Contact</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: UI/UX Exploration -->
+        <article class="project-card reveal" data-category="uiux" data-project-id="3">
+          <div class="project-card__thumb">
+            <img src="assets/images/project-3.jpg" alt="Mobile App UI Wireframe & Prototype" class="project-img" data-proj-img="3" onerror="this.parentElement.classList.add('no-img');" />
+            <div class="project-card__thumb-fallback">
+              <i class="ph ph-figma-logo"></i>
+            </div>
+            <span class="project-card__category" data-proj-cat="3">UI/UX Design</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-proj-title="3">Mobile App Wireframe &amp; UI Prototype</h3>
+            <p class="project-card__desc" data-proj-desc="3">
+              Eksplorasi perancangan antarmuka aplikasi mobile produktivitas mahasiswa dengan pendekatan clean UI, komponen reusable, dan alur interaksi intuitif.
+            </p>
+            <div class="project-card__tech" data-proj-tech="3">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">Wireframing</span>
+              <span class="tech-tag">Prototyping</span>
+            </div>
+            <div class="project-card__actions">
+              <button type="button" class="btn btn--sm btn--primary view-detail-btn" data-detail-id="3">View Details</button>
+              <a href="https://figma.com" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">
+                <i class="ph ph-figma-logo"></i> Figma
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Web Dev -->
+        <article class="project-card reveal" data-category="web" data-project-id="4">
+          <div class="project-card__thumb">
+            <img src="assets/images/project-4.jpg" alt="Personal Portfolio Landing Page" class="project-img" data-proj-img="4" onerror="this.parentElement.classList.add('no-img');" />
+            <div class="project-card__thumb-fallback">
+              <i class="ph ph-code"></i>
+            </div>
+            <span class="project-card__category" data-proj-cat="4">Web Development</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-proj-title="4">NEXA — Modern Minimalist Landing Page</h3>
+            <p class="project-card__desc" data-proj-desc="4">
+              Website portfolio responsif yang dibangun dengan semantic HTML5, modern CSS3, dan Vanilla JavaScript tanpa framework, dilengkapi panel manajemen konten lokal.
+            </p>
+            <div class="project-card__tech" data-proj-tech="4">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Vanilla JS</span>
+            </div>
+            <div class="project-card__actions">
+              <button type="button" class="btn btn--sm btn--primary view-detail-btn" data-detail-id="4">View Details</button>
+              <a href="#home" class="btn btn--sm btn--ghost">
+                <i class="ph ph-globe"></i> Live
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Business / Marketing -->
+        <article class="project-card reveal" data-category="business" data-project-id="5">
+          <div class="project-card__thumb">
+            <img src="assets/images/project-5.jpg" alt="Digital Marketing Campaign Strategy" class="project-img" data-proj-img="5" onerror="this.parentElement.classList.add('no-img');" />
+            <div class="project-card__thumb-fallback">
+              <i class="ph ph-chart-line-up"></i>
+            </div>
+            <span class="project-card__category" data-proj-cat="5">Business Project</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-proj-title="5">Digital Marketing &amp; Sales Promotion</h3>
+            <p class="project-card__desc" data-proj-desc="5">
+              Strategi publikasi dan kampanye pemasaran digital untuk meningkatkan awareness produk lokal melalui copywriting tertarget dan visual promosi kreatif.
+            </p>
+            <div class="project-card__tech" data-proj-tech="5">
+              <span class="tech-tag">Digital Marketing</span>
+              <span class="tech-tag">Copywriting</span>
+              <span class="tech-tag">MS Excel</span>
+            </div>
+            <div class="project-card__actions">
+              <button type="button" class="btn btn--sm btn--primary view-detail-btn" data-detail-id="5">View Details</button>
+              <a href="#contact" class="btn btn--sm btn--ghost">Overview</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: Academic Project -->
+        <article class="project-card reveal" data-category="academic" data-project-id="6">
+          <div class="project-card__thumb">
+            <img src="assets/images/project-6.jpg" alt="Sistem Informasi Tugas Akademik" class="project-img" data-proj-img="6" onerror="this.parentElement.classList.add('no-img');" />
+            <div class="project-card__thumb-fallback">
+              <i class="ph ph-student"></i>
+            </div>
+            <span class="project-card__category" data-proj-cat="6">Academic Project</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-proj-title="6">Sistem Informasi Pengelolaan Data</h3>
+            <p class="project-card__desc" data-proj-desc="6">
+              Proyek tugas kuliah yang mencakup pembuatan dokumentasi sistem, perancangan basis data relasional, dan simulasi alur operasional akademik.
+            </p>
+            <div class="project-card__tech" data-proj-tech="6">
+              <span class="tech-tag">Database</span>
+              <span class="tech-tag">MS Office</span>
+              <span class="tech-tag">Flowchart</span>
+            </div>
+            <div class="project-card__actions">
+              <button type="button" class="btn btn--sm btn--primary view-detail-btn" data-detail-id="6">View Details</button>
+              <a href="#contact" class="btn btn--sm btn--ghost">Docs</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects__grid -->
+
+      <!-- Empty State -->
+      <div class="projects__empty" id="projects-empty" style="display: none;">
+        <i class="ph ph-folder-open"></i>
+        <p>Belum ada proyek dalam kategori ini.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       5. SKILLS SECTION
+       ============================================================ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">What I Work With</span>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <p class="section-desc">
+          Tingkat kemampuan yang disesuaikan secara transparan berdasarkan pengalaman riil dan proses belajar saya.
+        </p>
+      </div>
+
+      <div class="skills__grid">
+
+        <!-- Adobe Creative Suite (Berpengalaman) -->
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <i class="ph ph-palette"></i>
+            <h3>Adobe Creative Suite</h3>
+          </div>
+          <div class="skill-group__level-badge skill-group__level-badge--proficient">Berpengalaman</div>
+          <p class="skill-group__note">Telah digunakan sejak lama untuk berbagai karya grafis &amp; video.</p>
+          <ul class="skill-list" id="skills-adobe-list">
+            <li class="skill-item"><i class="ph ph-check"></i> Adobe Photoshop (Editing Foto &amp; Poster)</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Adobe Illustrator (Vektor &amp; Logo)</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Adobe Premiere Pro (Video Editing)</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Adobe InDesign (Layout Majalah / Brosur)</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Adobe Lightroom (Color Grading)</li>
+          </ul>
+        </div>
+
+        <!-- Microsoft Office Suite (Berpengalaman) -->
+        <div class="skill-group reveal reveal--delay-1">
+          <div class="skill-group__header">
+            <i class="ph ph-microsoft-word-logo"></i>
+            <h3>Microsoft Office</h3>
+          </div>
+          <div class="skill-group__level-badge skill-group__level-badge--proficient">Berpengalaman</div>
+          <p class="skill-group__note">Standar produktivitas harian, administrasi, dan pelaporan.</p>
+          <ul class="skill-list" id="skills-office-list">
+            <li class="skill-item"><i class="ph ph-check"></i> Microsoft Word (Dokumentasi Resmi &amp; Laporan)</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Microsoft Excel (Olah Data &amp; Formula Dasar)</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Microsoft PowerPoint (Presentasi Profesional)</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Microsoft Publisher (Publikasi Cetak)</li>
+          </ul>
+        </div>
+
+        <!-- Desain Grafis & Aset Visual (Berpengalaman) -->
+        <div class="skill-group reveal reveal--delay-2">
+          <div class="skill-group__header">
+            <i class="ph ph-shapes"></i>
+            <h3>Desain Visual &amp; Media</h3>
+          </div>
+          <div class="skill-group__level-badge skill-group__level-badge--proficient">Berpengalaman</div>
+          <p class="skill-group__note">Eksplorasi visual untuk kebutuhan komersial dan organisasi.</p>
+          <ul class="skill-list" id="skills-visual-list">
+            <li class="skill-item"><i class="ph ph-check"></i> Canva Pro (Desain Cepat &amp; Kolaboratif)</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Brand Identity &amp; Guideline</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Typography &amp; Visual Hierarchy</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Konten Media Sosial &amp; Feeds</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Poster, Banner, &amp; Spanduk</li>
+          </ul>
+        </div>
+
+        <!-- UI/UX Design (Sedang Belajar) -->
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <i class="ph ph-figma-logo"></i>
+            <h3>UI/UX Design</h3>
+          </div>
+          <div class="skill-group__level-badge skill-group__level-badge--learning">Sedang Belajar</div>
+          <p class="skill-group__note">Fokus mendalami fundamental desain antarmuka dan interaksi.</p>
+          <ul class="skill-list" id="skills-uiux-list">
+            <li class="skill-item"><i class="ph ph-student"></i> Figma (Dasar &amp; Pemula)</li>
+            <li class="skill-item"><i class="ph ph-student"></i> Wireframing &amp; User Flow Sederhana</li>
+            <li class="skill-item"><i class="ph ph-student"></i> Interactive Prototype Sederhana</li>
+            <li class="skill-item"><i class="ph ph-student"></i> Prinsip Dasar UX &amp; Tata Letak Web</li>
+          </ul>
+        </div>
+
+        <!-- Web Development (Sedang Belajar) -->
+        <div class="skill-group reveal reveal--delay-1">
+          <div class="skill-group__header">
+            <i class="ph ph-code"></i>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-group__level-badge skill-group__level-badge--learning">Sedang Belajar</div>
+          <p class="skill-group__note">Membangun fondasi coding untuk halaman website modern.</p>
+          <ul class="skill-list" id="skills-web-list">
+            <li class="skill-item"><i class="ph ph-student"></i> HTML5 Semantik (Dasar)</li>
+            <li class="skill-item"><i class="ph ph-student"></i> CSS3 &amp; Flexbox/Grid (Dasar)</li>
+            <li class="skill-item"><i class="ph ph-student"></i> JavaScript DOM Manipulation (Dasar)</li>
+            <li class="skill-item"><i class="ph ph-student"></i> Responsive Web Layout</li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-group reveal reveal--delay-2">
+          <div class="skill-group__header">
+            <i class="ph ph-users-three"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-group__level-badge" style="background: rgba(37,42,40,0.08); color: var(--color-text);">Personal Quality</div>
+          <p class="skill-group__note">Karakter kerja sama dan komunikasi dalam tim.</p>
+          <ul class="skill-list" id="skills-soft-list">
+            <li class="skill-item"><i class="ph ph-check"></i> Kreativitas &amp; Problem Solving Visual</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Kerja Sama Tim &amp; Kolaborasi</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Manajemen Waktu &amp; Tanggung Jawab</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Kepekaan Estetika &amp; Detail</li>
+            <li class="skill-item"><i class="ph ph-check"></i> Semangat Belajar Hal Baru</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       6. EXPERIENCE & EDUCATION SECTION
+       ============================================================ -->
+  <section class="experience section section--alt" id="experience">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">My Journey</span>
+        <h2 class="section-title">Experience &amp; Education</h2>
+        <p class="section-desc">
+          Perjalanan organisasi, kepanitiaan, pengalaman kerja, serta latar belakang pendidikan saya.
+        </p>
+      </div>
+
+      <div class="timeline" id="experience-timeline">
+
+        <!-- Item 1: Organisasi -->
+        <div class="timeline__item reveal" data-type="org">
+          <div class="timeline__dot">
+            <i class="ph ph-users"></i>
+          </div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__type">Organisasi Mahasiswa</span>
+              <span class="timeline__year">2023 – Sekarang</span>
+            </div>
+            <h3 class="timeline__title">Kepala Divisi Kreatif &amp; Media</h3>
+            <p class="timeline__place">Organisasi Kemahasiswaan / BEM Fakultas</p>
+            <p class="timeline__desc">
+              Memimpin perancangan seluruh materi publikasi visual, feed Instagram, identitas acara, dan media promosi, menghasilkan peningkatan engagement akun resmi organisasi serta koordinasi tim yang solid.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2: Kepanitiaan Event -->
+        <div class="timeline__item reveal" data-type="event">
+          <div class="timeline__dot">
+            <i class="ph ph-calendar-check"></i>
+          </div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__type">Kepanitiaan</span>
+              <span class="timeline__year">2023</span>
+            </div>
+            <h3 class="timeline__title">Koordinator Desain &amp; Publikasi (PDD)</h3>
+            <p class="timeline__place">Pekan Kreativitas / Seminar Teknologi Kampus</p>
+            <p class="timeline__desc">
+              Bertanggung jawab penuh atas desain identitas acara, sertifikat digital, backdrop panggung, ID card peserta, serta pengelolaan dokumentasi selama kegiatan berlangsung.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3: Pengalaman Kerja / Magang / Freelance -->
+        <div class="timeline__item reveal" data-type="work">
+          <div class="timeline__dot">
+            <i class="ph ph-briefcase"></i>
+          </div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__type">Magang &amp; Freelance</span>
+              <span class="timeline__year">2022 – Sekarang</span>
+            </div>
+            <h3 class="timeline__title">Graphic Designer &amp; Digital Marketing Support</h3>
+            <p class="timeline__place">Freelance &amp; Mitra UMKM Lokal</p>
+            <p class="timeline__desc">
+              Mengerjakan berbagai proyek pembuatan logo, peremajaan kemasan produk UMKM, dan konten promosi digital untuk meningkatkan penjualan dan branding klien secara konsisten.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4: Pendidikan -->
+        <div class="timeline__item reveal" data-type="edu">
+          <div class="timeline__dot">
+            <i class="ph ph-graduation-cap"></i>
+          </div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__type">Pendidikan</span>
+              <span class="timeline__year">2022 – Sekarang</span>
+            </div>
+            <h3 class="timeline__title">Program Sarjana (S1)</h3>
+            <p class="timeline__place">Perguruan Tinggi di Jawa Tengah / Purwokerto</p>
+            <p class="timeline__desc">
+              Menempuh studi aktif dengan fokus pembelajaran pada teknologi informasi, komunikasi visual, manajemen proyek digital, dan multimedia.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       7. CONTACT SECTION
+       ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">Let's Connect</span>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">
+          Terbuka untuk diskusi proyek desain, kolaborasi kreatif, atau sekadar berbagi pengalaman.
+        </p>
+      </div>
+
+      <div class="contact__inner">
+
+        <!-- Contact Links -->
+        <div class="contact__info reveal">
+
+          <a href="mailto:bagasadrian@example.com" class="contact-link" id="contact-link-email">
+            <div class="contact-link__icon"><i class="ph ph-envelope"></i></div>
+            <div>
+              <span class="contact-link__label">Email</span>
+              <span class="contact-link__value" id="contact-val-email">bagasadrian@example.com</span>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/bagas_adrian" class="contact-link" id="contact-link-instagram" target="_blank" rel="noopener">
+            <div class="contact-link__icon"><i class="ph ph-instagram-logo"></i></div>
+            <div>
+              <span class="contact-link__label">Instagram</span>
+              <span class="contact-link__value" id="contact-val-instagram">@bagas_adrian</span>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/bagas-adrian-saputra" class="contact-link" id="contact-link-linkedin" target="_blank" rel="noopener">
+            <div class="contact-link__icon"><i class="ph ph-linkedin-logo"></i></div>
+            <div>
+              <span class="contact-link__label">LinkedIn</span>
+              <span class="contact-link__value" id="contact-val-linkedin">Bagas Adrian Saputra</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/bagasadrian" class="contact-link" id="contact-link-github" target="_blank" rel="noopener">
+            <div class="contact-link__icon"><i class="ph ph-github-logo"></i></div>
+            <div>
+              <span class="contact-link__label">GitHub</span>
+              <span class="contact-link__value" id="contact-val-github">github.com/bagasadrian</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- CTA Box -->
+        <div class="contact__cta reveal reveal--delay">
+          <div class="contact__cta-inner">
+            <div class="contact__cta-badge">
+              <i class="ph ph-sparkle"></i> Tersedia untuk Project
+            </div>
+            <h3>Siap Berkolaborasi?</h3>
+            <p>
+              Apakah Anda membutuhkan jasa perancangan logo, materi publikasi acara, feed media sosial, atau landing page sederhana? Mari bicarakan ide Anda bersama saya!
+            </p>
+            <a href="mailto:bagasadrian@example.com" class="btn btn--primary btn--lg" id="contact-cta-btn">
+              <i class="ph ph-paper-plane-tilt"></i>
+              <span>Kirim Pesan Sekarang</span>
+            </a>
+            <p class="contact__cta-note">Respon ramah &amp; cepat dalam 1&times;24 jam.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       8. FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <span class="logo-mark" id="footer-logo">NEXA</span>
+        <p class="footer__tagline">Turning Ideas Into Digital Experiences.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="current-year"></span> <span id="footer-copy-brand">NEXA</span> — Bagas Adrian Saputra. All rights reserved.</p>
+        <p class="footer__made">Modern Minimalist Personal Portfolio</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       9. FLOATING ACTION & UTILITIES
+       ============================================================ -->
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">
+    <i class="ph ph-arrow-up"></i>
+  </button>
+
+  <!-- Admin Trigger Button (Satu kesatuan dalam website) -->
+  <button class="admin-trigger" id="admin-trigger" aria-label="Buka Admin Panel NEXA" title="Kelola Konten &amp; Foto (Admin)">
+    <i class="ph ph-gear-six"></i>
+    <span class="admin-trigger__label">Admin</span>
+  </button>
+
+
+  <!-- ============================================================
+       10. INTEGRATED ADMIN PANEL (Single Web View)
+       ============================================================ -->
+  <!-- Admin Backdrop Overlay -->
+  <div class="admin-overlay" id="admin-overlay"></div>
+
+  <!-- Password Authentication Dialog Modal -->
+  <div class="admin-pwd-modal" id="admin-pwd-modal">
+    <div class="admin-pwd-modal__card">
+      <div class="admin-pwd-modal__header">
+        <div class="admin-pwd-modal__icon"><i class="ph ph-lock-key"></i></div>
+        <h3>NEXA Admin Access</h3>
+        <p>Masukkan kata sandi untuk mengedit teks dan mengunggah foto portofolio langsung dari browser.</p>
+      </div>
+      <form id="admin-login-form" onsubmit="return false;">
+        <div class="admin-field">
+          <label for="admin-pwd-input">Password Admin</label>
+          <input type="password" id="admin-pwd-input" placeholder="Masukkan password (default: nexa2024)" autocomplete="current-password" required />
+        </div>
+        <p class="admin-pwd-error" id="admin-pwd-error" style="display: none;">Password salah. Silakan coba lagi.</p>
+        <div class="admin-pwd-modal__actions">
+          <button type="button" class="btn btn--ghost" id="admin-pwd-cancel">Batal</button>
+          <button type="submit" class="btn btn--primary" id="admin-pwd-submit">
+            <i class="ph ph-sign-in"></i> Masuk Admin
+          </button>
+        </div>
+      </form>
+      <div class="admin-pwd-modal__tip">
+        <small>Tip: Password default adalah <code>nexa2024</code></small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide-in Admin Drawer -->
+  <aside class="admin-drawer" id="admin-drawer" aria-label="Admin Control Panel">
+    <!-- Header -->
+    <div class="admin-drawer__header">
+      <div class="admin-drawer__title">
+        <div class="admin-drawer__badge"><i class="ph ph-sliders"></i> Admin Mode</div>
+        <h2>NEXA CMS Editor</h2>
+        <p>Ubah foto, profil, project, dan teks secara langsung</p>
+      </div>
+      <button class="admin-drawer__close" id="admin-drawer-close" aria-label="Tutup Admin Panel">
+        <i class="ph ph-x"></i>
+      </button>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="admin-drawer__tabs">
+      <button class="admin-tab-btn active" data-tab="tab-identity">
+        <i class="ph ph-identification-card"></i> Identitas
+      </button>
+      <button class="admin-tab-btn" data-tab="tab-about">
+        <i class="ph ph-user"></i> About
+      </button>
+      <button class="admin-tab-btn" data-tab="tab-photos">
+        <i class="ph ph-image"></i> Foto &amp; Media
+      </button>
+      <button class="admin-tab-btn" data-tab="tab-projects">
+        <i class="ph ph-folder"></i> Projects
+      </button>
+      <button class="admin-tab-btn" data-tab="tab-contact">
+        <i class="ph ph-envelope"></i> Kontak
+      </button>
+    </div>
+
+    <!-- Drawer Body -->
+    <div class="admin-drawer__body">
+
+      <!-- TAB 1: IDENTITAS & HERO -->
+      <div class="admin-tab-pane active" id="tab-identity">
+        <div class="admin-card">
+          <h4 class="admin-card__title"><i class="ph ph-sparkle"></i> Brand &amp; Hero Headline</h4>
+          <div class="admin-field">
+            <label for="adm-brand-name">Nama Brand / Logo</label>
+            <input type="text" id="adm-brand-name" placeholder="NEXA" />
+            <small class="admin-hint">Akan otomatis mengubah logo di navbar dan footer.</small>
+          </div>
+          <div class="admin-field">
+            <label for="adm-headline-1">Hero Headline (Baris 1)</label>
+            <input type="text" id="adm-headline-1" placeholder="Turning Ideas Into" />
+          </div>
+          <div class="admin-field">
+            <label for="adm-headline-2">Hero Headline (Baris 2 - Miring)</label>
+            <input type="text" id="adm-headline-2" placeholder="Digital Experiences." />
+          </div>
+          <div class="admin-field">
+            <label for="adm-hero-desc">Deskripsi Singkat Hero</label>
+            <textarea id="adm-hero-desc" rows="4" placeholder="Tuliskan perkenalan singkat hero..."></textarea>
+          </div>
+          <div class="admin-row">
+            <div class="admin-field">
+              <label for="adm-hero-status">Status Diri</label>
+              <input type="text" id="adm-hero-status" placeholder="Mahasiswa Aktif" />
+            </div>
+            <div class="admin-field">
+              <label for="adm-hero-location">Lokasi</label>
+              <input type="text" id="adm-hero-location" placeholder="Purwokerto, Indonesia" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: ABOUT ME -->
+      <div class="admin-tab-pane" id="tab-about">
+        <div class="admin-card">
+          <h4 class="admin-card__title"><i class="ph ph-user-circle"></i> Data Diri &amp; Bio</h4>
+          <div class="admin-field">
+            <label for="adm-about-name">Nama Lengkap</label>
+            <input type="text" id="adm-about-name" placeholder="Bagas Adrian Saputra" />
+          </div>
+          <div class="admin-field">
+            <label for="adm-about-title">Gelar / Subtitle</label>
+            <input type="text" id="adm-about-title" placeholder="Mahasiswa | Graphic Designer" />
+          </div>
+          <div class="admin-field">
+            <label for="adm-about-greeting">Salam Pembuka (Greeting)</label>
+            <input type="text" id="adm-about-greeting" placeholder="Halo, saya Bagas Adrian Saputra 👋" />
+          </div>
+          <div class="admin-field">
+            <label for="adm-about-p1">Paragraf 1 (Pengalaman Utama)</label>
+            <textarea id="adm-about-p1" rows="4" placeholder="Ceritakan pengalaman utama dan tools yang dikuasai..."></textarea>
+          </div>
+          <div class="admin-field">
+            <label for="adm-about-p2">Paragraf 2 (Eksplorasi &amp; Minat)</label>
+            <textarea id="adm-about-p2" rows="4" placeholder="Ceritakan bidang yang sedang dipelajari..."></textarea>
+          </div>
+          <div class="admin-field">
+            <label for="adm-about-tags">Minat &amp; Fokus (Pisahkan dengan koma)</label>
+            <input type="text" id="adm-about-tags" placeholder="Graphic Design, Branding, Web Dev, UI/UX" />
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: FOTO & MEDIA (Upload langsung di browser) -->
+      <div class="admin-tab-pane" id="tab-photos">
+        <div class="admin-card">
+          <h4 class="admin-card__title"><i class="ph ph-camera"></i> Foto Profil</h4>
+          <p class="admin-hint">Unggah foto profil Anda. Foto otomatis disimpan ke penyimpanan browser (LocalStorage) tanpa perlu reload.</p>
+          <div class="photo-upload-box">
+            <input type="file" id="adm-upload-profile" accept="image/*" class="photo-upload-input" />
+            <label for="adm-upload-profile" class="photo-upload-label">
+              <i class="ph ph-upload-simple"></i>
+              <span>Pilih Foto Profil Baru</span>
+              <small>Format: JPG, PNG, WebP (Maks 3MB direkomendasikan)</small>
+            </label>
+          </div>
+          <div class="photo-preview-item" id="profile-preview-wrapper" style="display: none; margin-top: 10px;">
+            <img id="profile-preview-img" alt="Pratinjau Foto Profil" />
+            <button type="button" class="btn btn--sm btn--ghost" id="adm-reset-profile-photo">Gunakan Foto Asli</button>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h4 class="admin-card__title"><i class="ph ph-images"></i> Foto Thumbnail Proyek</h4>
+          <p class="admin-hint">Unggah gambar thumbnail untuk masing-masing dari ke-6 proyek.</p>
+          <div class="project-photo-pickers">
+            <div class="proj-photo-row" data-pnum="1">
+              <span>Proyek 1 (Brand Identity)</span>
+              <input type="file" class="adm-upload-proj" data-proj="1" accept="image/*" />
+            </div>
+            <div class="proj-photo-row" data-pnum="2">
+              <span>Proyek 2 (Social Media)</span>
+              <input type="file" class="adm-upload-proj" data-proj="2" accept="image/*" />
+            </div>
+            <div class="proj-photo-row" data-pnum="3">
+              <span>Proyek 3 (UI/UX Mobile)</span>
+              <input type="file" class="adm-upload-proj" data-proj="3" accept="image/*" />
+            </div>
+            <div class="proj-photo-row" data-pnum="4">
+              <span>Proyek 4 (Web Dev Landing)</span>
+              <input type="file" class="adm-upload-proj" data-proj="4" accept="image/*" />
+            </div>
+            <div class="proj-photo-row" data-pnum="5">
+              <span>Proyek 5 (Digital Marketing)</span>
+              <input type="file" class="adm-upload-proj" data-proj="5" accept="image/*" />
+            </div>
+            <div class="proj-photo-row" data-pnum="6">
+              <span>Proyek 6 (Sistem Akademik)</span>
+              <input type="file" class="adm-upload-proj" data-proj="6" accept="image/*" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: PROJECTS -->
+      <div class="admin-tab-pane" id="tab-projects">
+        <div class="admin-card">
+          <h4 class="admin-card__title"><i class="ph ph-folder-notch-open"></i> Kelola 6 Kartu Proyek</h4>
+          <p class="admin-hint">Ubah judul, kategori, dan deskripsi proyek dengan mudah.</p>
+
+          <!-- Accordion Proyek 1-6 -->
+          <div class="admin-projects-list">
+            <!-- Project 1 -->
+            <div class="admin-proj-edit-item">
+              <strong class="admin-proj-edit-num">Proyek #1</strong>
+              <div class="admin-field">
+                <label>Judul Proyek</label>
+                <input type="text" class="adm-p-title" data-p="1" placeholder="Brand Identity & Promosi UMKM" />
+              </div>
+              <div class="admin-field">
+                <label>Kategori</label>
+                <select class="adm-p-cat" data-p="1">
+                  <option value="graphic">Graphic Design</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="web">Web Development</option>
+                  <option value="business">Business Project</option>
+                  <option value="academic">Academic Project</option>
+                </select>
+              </div>
+              <div class="admin-field">
+                <label>Deskripsi Singkat</label>
+                <textarea rows="3" class="adm-p-desc" data-p="1" placeholder="Deskripsi proyek..."></textarea>
+              </div>
+              <div class="admin-field">
+                <label>Teknologi / Tools (pisahkan koma)</label>
+                <input type="text" class="adm-p-tech" data-p="1" placeholder="Adobe Illustrator, Photoshop, Canva" />
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="admin-proj-edit-item">
+              <strong class="admin-proj-edit-num">Proyek #2</strong>
+              <div class="admin-field">
+                <label>Judul Proyek</label>
+                <input type="text" class="adm-p-title" data-p="2" placeholder="Social Media Feed" />
+              </div>
+              <div class="admin-field">
+                <label>Kategori</label>
+                <select class="adm-p-cat" data-p="2">
+                  <option value="graphic" selected>Graphic Design</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="web">Web Development</option>
+                  <option value="business">Business Project</option>
+                  <option value="academic">Academic Project</option>
+                </select>
+              </div>
+              <div class="admin-field">
+                <label>Deskripsi Singkat</label>
+                <textarea rows="3" class="adm-p-desc" data-p="2"></textarea>
+              </div>
+              <div class="admin-field">
+                <label>Teknologi / Tools</label>
+                <input type="text" class="adm-p-tech" data-p="2" placeholder="Photoshop, Illustrator" />
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="admin-proj-edit-item">
+              <strong class="admin-proj-edit-num">Proyek #3</strong>
+              <div class="admin-field">
+                <label>Judul Proyek</label>
+                <input type="text" class="adm-p-title" data-p="3" placeholder="Mobile App UI" />
+              </div>
+              <div class="admin-field">
+                <label>Kategori</label>
+                <select class="adm-p-cat" data-p="3">
+                  <option value="uiux" selected>UI/UX Design</option>
+                  <option value="graphic">Graphic Design</option>
+                  <option value="web">Web Development</option>
+                  <option value="business">Business Project</option>
+                  <option value="academic">Academic Project</option>
+                </select>
+              </div>
+              <div class="admin-field">
+                <label>Deskripsi Singkat</label>
+                <textarea rows="3" class="adm-p-desc" data-p="3"></textarea>
+              </div>
+              <div class="admin-field">
+                <label>Teknologi / Tools</label>
+                <input type="text" class="adm-p-tech" data-p="3" placeholder="Figma, Wireframing" />
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="admin-proj-edit-item">
+              <strong class="admin-proj-edit-num">Proyek #4</strong>
+              <div class="admin-field">
+                <label>Judul Proyek</label>
+                <input type="text" class="adm-p-title" data-p="4" placeholder="NEXA Landing Page" />
+              </div>
+              <div class="admin-field">
+                <label>Kategori</label>
+                <select class="adm-p-cat" data-p="4">
+                  <option value="web" selected>Web Development</option>
+                  <option value="graphic">Graphic Design</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="business">Business Project</option>
+                  <option value="academic">Academic Project</option>
+                </select>
+              </div>
+              <div class="admin-field">
+                <label>Deskripsi Singkat</label>
+                <textarea rows="3" class="adm-p-desc" data-p="4"></textarea>
+              </div>
+              <div class="admin-field">
+                <label>Teknologi / Tools</label>
+                <input type="text" class="adm-p-tech" data-p="4" placeholder="HTML5, CSS3, Vanilla JS" />
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="admin-proj-edit-item">
+              <strong class="admin-proj-edit-num">Proyek #5</strong>
+              <div class="admin-field">
+                <label>Judul Proyek</label>
+                <input type="text" class="adm-p-title" data-p="5" placeholder="Digital Marketing Campaign" />
+              </div>
+              <div class="admin-field">
+                <label>Kategori</label>
+                <select class="adm-p-cat" data-p="5">
+                  <option value="business" selected>Business Project</option>
+                  <option value="graphic">Graphic Design</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="web">Web Development</option>
+                  <option value="academic">Academic Project</option>
+                </select>
+              </div>
+              <div class="admin-field">
+                <label>Deskripsi Singkat</label>
+                <textarea rows="3" class="adm-p-desc" data-p="5"></textarea>
+              </div>
+              <div class="admin-field">
+                <label>Teknologi / Tools</label>
+                <input type="text" class="adm-p-tech" data-p="5" placeholder="Social Media, Copywriting" />
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="admin-proj-edit-item">
+              <strong class="admin-proj-edit-num">Proyek #6</strong>
+              <div class="admin-field">
+                <label>Judul Proyek</label>
+                <input type="text" class="adm-p-title" data-p="6" placeholder="Sistem Informasi Data" />
+              </div>
+              <div class="admin-field">
+                <label>Kategori</label>
+                <select class="adm-p-cat" data-p="6">
+                  <option value="academic" selected>Academic Project</option>
+                  <option value="graphic">Graphic Design</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="web">Web Development</option>
+                  <option value="business">Business Project</option>
+                </select>
+              </div>
+              <div class="admin-field">
+                <label>Deskripsi Singkat</label>
+                <textarea rows="3" class="adm-p-desc" data-p="6"></textarea>
+              </div>
+              <div class="admin-field">
+                <label>Teknologi / Tools</label>
+                <input type="text" class="adm-p-tech" data-p="6" placeholder="Database, MS Office" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 5: KONTAK -->
+      <div class="admin-tab-pane" id="tab-contact">
+        <div class="admin-card">
+          <h4 class="admin-card__title"><i class="ph ph-address-book"></i> Media Sosial &amp; Kontak</h4>
+          <div class="admin-field">
+            <label for="adm-contact-email">Alamat Email</label>
+            <input type="email" id="adm-contact-email" placeholder="bagasadrian@example.com" />
+          </div>
+          <div class="admin-field">
+            <label for="adm-contact-instagram">Instagram (Username atau URL)</label>
+            <input type="text" id="adm-contact-instagram" placeholder="@bagas_adrian" />
+          </div>
+          <div class="admin-field">
+            <label for="adm-contact-linkedin">LinkedIn Profile URL</label>
+            <input type="text" id="adm-contact-linkedin" placeholder="https://linkedin.com/in/bagas-adrian-saputra" />
+          </div>
+          <div class="admin-field">
+            <label for="adm-contact-github">GitHub Profile URL</label>
+            <input type="text" id="adm-contact-github" placeholder="https://github.com/bagasadrian" />
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /admin-drawer__body -->
+
+    <!-- Footer Actions -->
+    <div class="admin-drawer__footer">
+      <button type="button" class="btn btn--ghost" id="adm-btn-reset">
+        <i class="ph ph-arrow-counter-clockwise"></i> Reset Default
+      </button>
+      <button type="button" class="btn btn--primary" id="adm-btn-save">
+        <i class="ph ph-floppy-disk"></i> Simpan Perubahan
+      </button>
+    </div>
+
+    <!-- Notification Toast in drawer -->
+    <div class="admin-toast" id="admin-toast">
+      <i class="ph ph-check-circle"></i>
+      <span id="admin-toast-text">Perubahan berhasil disimpan!</span>
+    </div>
+
+  </aside>
+
+  <!-- Detail Modal for Projects -->
+  <div class="proj-detail-modal" id="proj-detail-modal">
+    <div class="proj-detail-modal__card">
+      <button class="proj-detail-modal__close" id="proj-detail-close" aria-label="Tutup Detail">
+        <i class="ph ph-x"></i>
+      </button>
+      <div class="proj-detail-modal__body">
+        <span class="label" id="modal-proj-cat">Category</span>
+        <h3 id="modal-proj-title">Project Title</h3>
+        <p id="modal-proj-desc">Project Description</p>
+        <div class="project-card__tech" id="modal-proj-tech"></div>
+        <div class="modal-actions" style="margin-top: 20px;">
+          <a href="#contact" class="btn btn--primary" id="modal-proj-cta">Diskusikan Proyek Serupa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- External JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
